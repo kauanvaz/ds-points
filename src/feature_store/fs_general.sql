@@ -1,4 +1,4 @@
--- A base ativa foi definida como 21 dias
+-- Base ativa definida como 21 dias
 
 WITH tb_rfv AS (
 
