@@ -37,7 +37,7 @@ tb_idade AS (
 )
 
 SELECT
-    '{date}' AS dfRef,
+    '{date}' AS dtRef,
     t1.*,
     t2.idadeBaseDias,
     t3.flEmail
