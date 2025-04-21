@@ -1,5 +1,3 @@
--- Base ativa definida como 21 dias
-
 WITH tb_rfv AS (
 
     SELECT
