@@ -1,0 +1,6 @@
+feature-engine==1.8.3
+mlflow==2.22.0
+pandas==2.2.3
+scikit-learn==1.6.1
+SQLAlchemy==2.0.40
+tqdm==4.67.1
