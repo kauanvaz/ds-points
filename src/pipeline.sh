@@ -1,4 +1,4 @@
 cd feature_store
 bash exec.sh
 cd ../predict
-python3 predict.py
+python3 profile_user.py

@@ -4,6 +4,8 @@ import pandas as pd
 import sqlalchemy
 import matplotlib.pyplot as plt
 
+from sklearn import tree
+
 def ciclo_vida(row):
 
     if row['idadeBaseDias'] <=7:
@@ -65,5 +67,18 @@ df_recencia.groupby(by=['CicloVida']).agg({
     "recenciaDias":['mean', 'count'],
     "idadeBaseDias":['mean'],
     })
+
+# %%
+
+clf = tree.DecisionTreeClassifier(min_samples_leaf=1, max_depth=50, random_state=42)
+clf.fit(df_recencia[['recenciaDias', 'idadeBaseDias']], df_recencia['CicloVida'])
+model = pd.Series(
+    {
+        "model":clf,
+        "features":['recenciaDias', 'idadeBaseDias']
+    }
+)
+
+model.to_pickle("../../models/cluster_recencia.pkl")
 
 # %%
