@@ -6,14 +6,9 @@ Este projeto foi desenvolvido como parte do curso [Data Science & Points](https:
 
 O objetivo principal é identificar padrões e comportamentos que possam indicar quando um usuário está prestes a abandonar a plataforma, permitindo ações preventivas para aumentar o engajamento.
 
-## Etapas do Projeto
+## Fluxograma
 
-- Construção de Feature Store
-- Processamento das safras (cohorts)
-- Definição e construção da variável resposta (churn)
-- Criação da ABT (Analytical Base Table)
-- Treinamento de modelos preditivos
-- Análise de performance em dados Out of Time (OOT)
+![Fluxograma](imgs/fluxograma.png)
 
 ## Conceitos Importantes
 
